@@ -5,7 +5,7 @@ const useStyles = createUseStyles((theme) => ({
 		position: "fixed",
 		left: "0",
 		bottom: "0",
-		height: "321px",
+		height: "20.063rem",
 		width: "100%",
 		zIndex: "88",
 		backgroundColor: "#ccced3c2",

@@ -2,6 +2,7 @@ import { createUseStyles } from "react-jss";
 
 const useStyles = createUseStyles((theme) => ({
 	PlaceNearby: {
+		position: "relative",
 		display: "flex",
 		width: "166px",
 		height: "166px",

@@ -121,8 +121,13 @@ const useStyles = createUseStyles((theme) => ({
 		zIndex: "99",
 		justifyContent: "center",
 	},
+	MadeBy: {
+		display: "flex",
+		marginTop: "32px",
+		justifyContent: "center",
+	},
 }));
-export let PlacePage = (info, props) => {
+export let Moon = (info, props) => {
 	const classes = useStyles(props);
 	let nearbyList = [
 		{
@@ -191,36 +196,28 @@ export let PlacePage = (info, props) => {
 					<ButtonPlace
 						input={"Get me there"}
 						destination={"./map"}
+						active={false}
+					/>
+					<ButtonPlace
+						input={"Case Study"}
+						destination={"https://miguel-cardoso.com/explorer.html"}
 						active={true}
 					/>
-					<ButtonPlace input={"Get Stamp"} destination={""} active={false} />
-				</div>
-				<div className={classes.Nearby}>
-					<h3>Nearby</h3>
-					<div className={classes.NearbyList}>
-						<NearbyPlaces plasses={nearbyList} />
-					</div>
 				</div>
 				<div className={classes.About}>
 					<h3>About</h3>
 					<p>
-						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-						nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-						erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-						et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-						Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-						sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-						et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-						accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-						no sea takimata sanctus est Lorem ipsum dolor sit amet.
+						There was an UX sprint proposed by Adobe UK where the participants
+						had from Tuesday until Sunday to learn and implement all their
+						knowledge of UX design and Adobe XD. (Learn my process by clicking
+						the Case Study button)
 					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-						nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-						erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-						et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-						Lorem ipsum dolor sit amet. Lorem
-					</p>
+				</div>
+				<div className={classes.MadeBy}>
+					<img
+						src="https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/Made%20By.svg"
+						alt=""
+					></img>
 				</div>
 			</div>
 			<div className={classes.BotBar}>

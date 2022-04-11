@@ -152,7 +152,7 @@ export let ListAll = (props) => {
 						}
 						location={"Moon"}
 						type={"city"}
-						distance={"3874400 km"}
+						distance={"384.4 Mm"}
 					/>
 				</div>
 			</div>

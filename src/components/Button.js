@@ -10,7 +10,7 @@ const useStyles = createUseStyles((theme) => ({
 		backdropFilter: "blur(30px)",
 		textAlign: "center",
 		alignContent: "center",
-		padding: "10px",
+		padding: "0.625rem",
 	},
 }));
 

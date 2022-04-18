@@ -54,6 +54,10 @@ const useStyles = createUseStyles((theme) => ({
 
 export let ListBeach = (props) => {
 	const classes = useStyles(props);
+	document.title = "Explorer App | List Searched";
+	document.getElementsByTagName("META")[2].content =
+		"Explorer App is a concept of a web application for exploring the world.";
+	document.getElementsByTagName("META")[3].content = "#d96e1e";
 	return (
 		<div className={classes.Home}>
 			<div className={classes.TopBar}>

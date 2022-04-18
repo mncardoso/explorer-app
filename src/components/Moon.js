@@ -2,7 +2,6 @@ import { createUseStyles } from "react-jss";
 import { BotBar } from "./BotBar";
 import { ButtonPlace } from "./ButtonPlace";
 import { Tag } from "./Tag";
-import { Nearby } from "./Nearby";
 
 const useStyles = createUseStyles((theme) => ({
 	Home: {
@@ -129,49 +128,14 @@ const useStyles = createUseStyles((theme) => ({
 }));
 export let Moon = (info, props) => {
 	const classes = useStyles(props);
-	let nearbyList = [
-		{
-			id: 0,
-			title: "Local Busines",
-			image:
-				"https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/busines1.png",
-		},
-		{
-			id: 1,
-			title: "Local Busines",
-			image:
-				"https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/busines2.png",
-		},
-		{
-			id: 2,
-			title: "Local Busines",
-			image:
-				"https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/busines3.png",
-		},
-		{
-			id: 3,
-			title: "Local Busines",
-			image:
-				"https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/busines4.png",
-		},
-		{
-			id: 4,
-			title: "Local Busines",
-			image:
-				"https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/busines5.png",
-		},
-	];
+	document.title = "Explorer App | Moon";
+	document.getElementsByTagName("META")[2].content =
+		"Moon Ester Egg | Explorer App is a concept of a web application for exploring the world.";
+	document.getElementsByTagName("META")[3].content = "#291F63";
 	function Tags(props) {
 		return props.tags.map((tags) => (
 			<div key={tags.id}>
 				<Tag type={tags.type} time={tags.time} />
-			</div>
-		));
-	}
-	function NearbyPlaces(props) {
-		return props.plasses.map((plasses) => (
-			<div key={plasses.id}>
-				<Nearby title={plasses.title} image={plasses.image} />
 			</div>
 		));
 	}
@@ -193,14 +157,10 @@ export let Moon = (info, props) => {
 					<Tags tags={info.makeTags} />
 				</div>
 				<div className={classes.Buttons}>
-					<ButtonPlace
-						input={"Get me there"}
-						destination={"./map"}
-						active={false}
-					/>
+					<ButtonPlace input={"Get me there"} destination={""} active={false} />
 					<ButtonPlace
 						input={"Case Study"}
-						destination={"https://miguel-cardoso.com/explorer.html"}
+						destination={"./CaseStudy"}
 						active={true}
 					/>
 				</div>

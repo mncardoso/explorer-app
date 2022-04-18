@@ -45,6 +45,9 @@ const useStyles = createUseStyles((theme) => ({
 }));
 export let Map = (info, props) => {
 	const classes = useStyles(props);
+	document.title = "Explorer App | Map";
+	document.getElementsByTagName("META")[2].content = "";
+	document.getElementsByTagName("META")[3].content = "#ffffff4d";
 	return (
 		<div className={classes.Home}>
 			<div className={classes.Image}>

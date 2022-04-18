@@ -4,7 +4,7 @@ const useStyles = createUseStyles((theme) => ({
 	ButtonActive: {
 		display: "block",
 		background: "rgb(217, 110, 30)",
-		width: "11.25.rem",
+		width: "11.25rem",
 		height: "2.75rem",
 		borderRadius: "10px",
 		backdropFilter: "blur(30px)",
@@ -16,7 +16,7 @@ const useStyles = createUseStyles((theme) => ({
 	ButtonInactive: {
 		display: "block",
 		background: "rgba(0, 0, 0, 0.33)",
-		width: "11.25.rem",
+		width: "11.25rem",
 		height: "2.75rem",
 		borderRadius: "10px",
 		backdropFilter: "blur(30px)",

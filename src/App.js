@@ -10,6 +10,7 @@ import { PlacePage } from "./components/PlacePage";
 import { Moon } from "./components/Moon";
 import { Map } from "./components/Map";
 import { Passport } from "./components/Passport";
+import { CaseStudy } from "./components/CaseStudy";
 import "./App.css";
 
 const useStyles = createUseStyles((theme) => ({
@@ -32,14 +33,24 @@ const useStyles = createUseStyles((theme) => ({
 		height: "100vh",
 		overflow: "hidden",
 	},
-	TopBar: { zIndex: "100", position: "relative" },
+	App: {
+		background: theme.palette.background,
+		height: "100vh",
+		width: "100vw",
+		justifyContent: "center",
+		alignItems: "center",
+	},
+	TopBar: {
+		zIndex: "100",
+		position: "relative",
+	},
 	Main: { display: "block", height: "100%", zIndex: "99" },
 }));
 
 function App(props) {
 	const classes = useStyles(props);
 	return (
-		<div>
+		<div className={classes.App}>
 			<div className={classes.TopBar}>
 				<TopBar />
 			</div>
@@ -189,8 +200,10 @@ function App(props) {
 							/>
 						}
 					></Route>
+					<Route path="/CaseStudy" element={<CaseStudy />} />
 				</Routes>
 			</div>
+			c
 		</div>
 	);
 }

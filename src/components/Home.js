@@ -72,6 +72,10 @@ const useStyles = createUseStyles((theme) => ({
 
 export let Home = (props) => {
 	const classes = useStyles(props);
+	document.title = "Explorer App | Home";
+	document.getElementsByTagName("META")[2].content =
+		"Explorer App is a concept of a web application for exploring the world.";
+	document.getElementsByTagName("META")[3].content = "#d96e1e";
 	return (
 		<div className={classes.Home}>
 			<div className={classes.Foreground}>

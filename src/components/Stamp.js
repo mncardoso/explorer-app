@@ -7,6 +7,9 @@ const useStyles = createUseStyles((theme) => ({
 		height: "100px",
 		border: "2px dashed rgba(115, 86, 69, 0.33)",
 		borderRadius: "10px",
+		justifyContent: "center",
+		alignItems: "center",
+		contain: "overflow",
 	},
 }));
 

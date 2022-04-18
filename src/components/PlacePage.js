@@ -124,6 +124,10 @@ const useStyles = createUseStyles((theme) => ({
 }));
 export let PlacePage = (info, props) => {
 	const classes = useStyles(props);
+	document.title = "Explorer App | Place";
+	document.getElementsByTagName("META")[2].content =
+		"Explorer App is a concept of a web application for exploring the world.";
+	document.getElementsByTagName("META")[3].content = "#d96e1e";
 	let nearbyList = [
 		{
 			id: 0,

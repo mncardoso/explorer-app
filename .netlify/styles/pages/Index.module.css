@@ -1,0 +1,48 @@
+.home {
+	display: block;
+	background-color: var(--color-foreground);
+	justify-content: space-between;
+	padding: 1rem;
+	height: 100vh;
+	width: 100vw;
+}
+
+.background {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 100%;
+	z-index: 0;
+}
+
+.foreground {
+	position: relative;
+	left: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+}
+.logo {
+	display: grid;
+	width: 100%;
+	grid-template-rows: 167.76px 147px;
+	margin-top: 0.75rem;
+	justify-content: center;
+}
+.logo svg {
+	justify-self: center;
+}
+.logo h1 {
+	font-size: 3.5rem;
+	font-weight: var(--fontWeight-medium);
+	margin: 0;
+}
+
+.button {
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
+	margin-top: 0.625rem;
+	z-index: 10;
+}

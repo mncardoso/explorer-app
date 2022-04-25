@@ -1,0 +1,38 @@
+{
+	"name": "explorer.app",
+	"version": "3.0.0",
+	"description": "Explorer App is a conseptualized web application for exploring the world.",
+	"main": "index.js",
+	"private": false,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/mncardoso/explorer.app.git"
+	},
+	"keywords": [
+		"explorer",
+		"app"
+	],
+	"author": "Miguel Cardoso",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/mncardoso/explorer.app/issues"
+	},
+	"homepage": "https://explorer.miguel-cardoso.com",
+	"dependencies": {
+		"autoprefixer": "^10.4.5",
+		"next": "12.1.5",
+		"normalize.css": "^8.0.1",
+		"react": "18.0.0",
+		"react-dom": "18.0.0"
+	},
+	"devDependencies": {
+		"eslint": "8.14.0",
+		"eslint-config-next": "12.1.5"
+	}
+}

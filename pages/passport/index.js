@@ -50,7 +50,7 @@ export default function Passport({ data }) {
 							<h6>Joined</h6>
 							<p>20/04/14</p>
 						</div>
-						<hr class={styles.line}></hr>
+						<hr className={styles.line}></hr>
 					</div>
 					<div className={styles.content}>
 						{data.map((d) => (

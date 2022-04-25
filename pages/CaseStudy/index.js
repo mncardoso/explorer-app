@@ -1,8 +1,13 @@
 import Head from "next/head";
+import Image from "next/image";
 import { PostIt } from "../../Components/misc/PostIt.js";
 import { ColourSwatches } from "../../Components/misc/ColourSwatches.js";
 import { ButtonPlace } from "../../Components/Buttons/ButtonPlace.js";
 import styles from "../../styles/pages/CaseStudy.module.css";
+
+function ImageLoader({ src }) {
+	return `https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/assets/${src}`;
+}
 
 export default function Home() {
 	return (
@@ -138,10 +143,17 @@ export default function Home() {
 							stamps for the look of the app, as if it were a digital passport
 							with a stamp for every location visited.
 						</p>
-						<img
-							src="https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/assets/expMoodBoard.png"
-							alt="Mood board"
-						></img>
+						<div className={styles.mood_board_img}>
+							{" "}
+							<Image
+								loader={ImageLoader}
+								src={"expMoodBoard.png"}
+								alt="Mood board"
+								layout="responsive"
+								width={1285}
+								height={751}
+							/>
+						</div>
 					</div>
 					<div className={styles.colours}>
 						<h2>Colours</h2>
@@ -174,10 +186,16 @@ export default function Home() {
 					</div>
 					<div className={styles.design}>
 						<h2>Design</h2>
-						<img
-							src="https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/assets/expDesign.png"
-							alt="Design"
-						></img>
+						<div className={styles.design_img}>
+							<Image
+								loader={ImageLoader}
+								src="expDesign.png"
+								alt="Design"
+								layout="responsive"
+								width={1285}
+								height={723}
+							/>
+						</div>
 					</div>
 					<div className={styles.conclusion}>
 						<h2>Conclusion</h2>
@@ -193,8 +211,15 @@ export default function Home() {
 					</div>
 					<div className={styles.feedback}>
 						<h2>Feedback</h2>
-						<a href="https://twitter.com/ux_patricia" target="_blank">
-							<img src="https://pbs.twimg.com/profile_images/1126446972880207876/GVtXo5V4_400x400.png"></img>
+						<a
+							href="https://twitter.com/ux_patricia"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<img
+								src="https://pbs.twimg.com/profile_images/1126446972880207876/GVtXo5V4_400x400.png"
+								alt="Patricia Reiners"
+							></img>
 						</a>
 						<div>
 							<h3>Patricia Reiners</h3>

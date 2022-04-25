@@ -88,7 +88,7 @@
 	font-weight: var(--fontWeight-medium);
 	margin: 0.25rem 0 0.5rem 5rem;
 }
-.mood_board > img {
+.mood_board_img {
 	width: calc(100% - 12px);
 	padding: 1rem;
 	border-radius: 4px;
@@ -133,7 +133,7 @@
 	font-size: 1.5rem;
 	font-weight: var(--fontWeight-bold);
 }
-.design > img {
+.design_img {
 	width: calc(100% - 12px);
 	border-radius: 4px;
 	margin-top: 6px;

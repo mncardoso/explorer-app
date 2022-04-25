@@ -71,7 +71,7 @@ function Page({ data }) {
 					<div className={styles.content}>
 						<div className={styles.tags} id="tags">
 							{data[0].tags.map((d) => (
-								<Tag type={d.type} time={d.time} />
+								<Tag key={d.type} type={d.type} time={d.time} />
 							))}
 						</div>
 						<div className={styles.buttons}>

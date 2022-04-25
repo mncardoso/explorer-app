@@ -15,11 +15,6 @@
     "static/development/_middlewareManifest.js"
   ],
   "pages": {
-    "/": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/index.js"
-    ],
     "/[place]": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -40,10 +35,20 @@
       "static/chunks/main.js",
       "static/chunks/pages/list_all.js"
     ],
+    "/list_beach": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/list_beach.js"
+    ],
     "/list_fav": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/list_fav.js"
+    ],
+    "/map": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/map.js"
     ],
     "/passport": [
       "static/chunks/webpack.js",

@@ -2,13 +2,13 @@ import { useRouter } from "next/router";
 import styles from "../../styles/misc/Place.module.css";
 
 export let Place = ({
+	key,
 	destination,
 	image,
 	location,
 	distance,
 	type,
 	fav = false,
-	data,
 }) => {
 	let star = "";
 	if (fav === true) {

@@ -45,7 +45,7 @@ export let TopBar = () => {
 							<rect
 								fill="none"
 								stroke="none"
-								stroke-miterlimit="10"
+								strokeMiterlimit="10"
 								width="24.288"
 								height="12.512"
 								rx="2.667"
@@ -53,7 +53,7 @@ export let TopBar = () => {
 							<rect
 								fill="none"
 								stroke="#fff"
-								stroke-miterlimit="10"
+								strokeMiterlimit="10"
 								opacity="0.35"
 								x="0.5"
 								y="0.5"

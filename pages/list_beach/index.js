@@ -54,6 +54,7 @@ export default function Home({ data }) {
 						<div className={styles.content}>
 							{data.map((d) => (
 								<Place
+									key={d.destination}
 									destination={`./${d.destination}`}
 									image={d.image}
 									location={d.location}

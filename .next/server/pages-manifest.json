@@ -2,8 +2,9 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/Moon": "pages/Moon.js",
-  "/[place]": "pages/[place].js",
+  "/": "pages/index.js",
   "/list_all": "pages/list_all.js",
-  "/passport": "pages/passport.js"
+  "/passport": "pages/passport.js",
+  "/list_fav": "pages/list_fav.js",
+  "/[place]": "pages/[place].js"
 }

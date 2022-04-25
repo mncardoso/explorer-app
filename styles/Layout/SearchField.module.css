@@ -1,0 +1,29 @@
+.search_field {
+	display: flex;
+	background-color: #7676803d;
+	height: 2.25rem;
+	width: 100%;
+	border-radius: 10px;
+	align-content: center;
+}
+.search_field > a {
+	display: grid;
+	width: 100%;
+	grid-template-columns: 2.25rem 1fr 2.25rem;
+}
+.search_field > a > li {
+	display: flex;
+	align-self: center;
+	width: 100%;
+}
+.search_field svg {
+	margin: auto;
+	justify-self: center;
+}
+
+.text_empty {
+	color: #ebebf599;
+}
+.text_full {
+	color: #fff;
+}

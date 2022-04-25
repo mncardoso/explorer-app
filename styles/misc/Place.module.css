@@ -1,0 +1,94 @@
+.home {
+	display: block;
+	background-color: var(--color-foreground);
+	justify-content: space-between;
+	padding: 1rem;
+	height: 100vh;
+	width: 100vw;
+}
+.place {
+	display: flex;
+	height: 166px;
+	border-radius: 10px;
+	position: relative;
+	color: var(--color-text);
+}
+
+.star {
+	position: absolute;
+	margin-left: 5px;
+}
+
+.distance {
+	position: absolute;
+	margin-left: 83px;
+	display: flex;
+	width: 83px;
+	height: 23px;
+	align-content: center;
+	justify-content: end;
+	background-color: rgba(0, 0, 0, 0.25);
+	backdrop-filter: blur(30px);
+	border-radius: 0px 10px;
+}
+.distance p {
+	font-size: 0.8125rem;
+	font-weight: var(--fontWeight-medium);
+	margin-right: 5px;
+	padding: 2px;
+}
+
+.city {
+	position: absolute;
+	margin-top: 122px;
+	width: 166px;
+	height: 44px;
+	bottom: 0px;
+	background-color: var(--color-city-alpha);
+	backdrop-filter: blur(30px);
+	border-radius: 0px 0px 10px 10px;
+	text-align: center;
+}
+.city p {
+	padding: 10px;
+	font-weight: var(--fontWeight-medium);
+}
+
+.seaside {
+	position: absolute;
+	margin-top: 122px;
+	width: 166px;
+	height: 44px;
+	bottom: 0px;
+	background-color: var(--color-seaside-alpha);
+	backdrop-filter: blur(30px);
+	border-radius: 0px 0px 10px 10px;
+	text-align: center;
+}
+.seaside p {
+	padding: 10px;
+	font-weight: var(--fontWeight-medium);
+}
+
+.park {
+	position: absolute;
+	margin-top: 122px;
+	width: 166px;
+	height: 44px;
+	bottom: 0px;
+	background-color: var(--color-park-alpha);
+	backdrop-filter: blur(30px);
+	border-radius: 0px 0px 10px 10px;
+	text-align: center;
+}
+.park p {
+	padding: 10px;
+	font-weight: var(--fontWeight-medium);
+}
+
+.image {
+	margin-top: 0px;
+	margin-right: 0px;
+	top: 0px;
+	left: 0px;
+}

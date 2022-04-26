@@ -15,8 +15,8 @@
   NETLIFY_NEXT_PLUGIN_SKIP = "true"
   NODE_VERSION = "17"
 
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
+  ##[[plugins]]
+  ## package = "@netlify/plugin-nextjs"
 
 [dev]
 framework = "#static"

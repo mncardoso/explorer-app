@@ -1,5 +1,5 @@
 import styles from "../../styles/Layout/TopBar.module.css";
-import { Clock } from "../../components/misc/Clock";
+import { Clock } from "../misc/Clock";
 
 export let TopBar = () => {
 	return (

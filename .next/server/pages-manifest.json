@@ -1,10 +1,16 @@
 {
+  "/CaseStudy": "pages/CaseStudy.html",
+  "/Moon": "pages/Moon.html",
+  "/": "pages/index.html",
   "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
+  "/map": "pages/map.html",
+  "/searchfiled": "pages/searchfiled.html",
+  "/[place]": "pages/[place].js",
   "/list_all": "pages/list_all.js",
+  "/_error": "pages/_error.js",
   "/passport": "pages/passport.js",
   "/list_fav": "pages/list_fav.js",
-  "/[place]": "pages/[place].js",
-  "/map": "pages/map.js"
+  "/list_beach": "pages/list_beach.js",
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html"
 }

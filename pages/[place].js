@@ -65,7 +65,7 @@ function Page({ data }) {
 							<p>{data[0].location}</p>
 						</div>
 						<div className={styles.image}>
-							<img src={data[0].image} alt=""></img>
+							<img src={data[0].header} alt=""></img>
 						</div>
 					</div>
 					<div className={styles.content}>

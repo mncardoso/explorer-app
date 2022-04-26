@@ -49,6 +49,9 @@ var jsx_runtime_ = __webpack_require__(997);
 // EXTERNAL MODULE: external "next/head"
 var head_ = __webpack_require__(968);
 var head_default = /*#__PURE__*/__webpack_require__.n(head_);
+// EXTERNAL MODULE: ./node_modules/next/image.js
+var next_image = __webpack_require__(5675);
+var image_default = /*#__PURE__*/__webpack_require__.n(next_image);
 // EXTERNAL MODULE: ./styles/pages/Passport.module.css
 var Passport_module = __webpack_require__(4569);
 var Passport_module_default = /*#__PURE__*/__webpack_require__.n(Passport_module);
@@ -64,20 +67,25 @@ var Stamp_module_default = /*#__PURE__*/__webpack_require__.n(Stamp_module);
 ;// CONCATENATED MODULE: ./Components/misc/Stamp.js
 
 
-let Stamp = (image, destination)=>{
+
+let Stamp = ({ image , destination  })=>{
     return destination === "" ? /*#__PURE__*/ jsx_runtime_.jsx("div", {
         className: (Stamp_module_default()).stamp
     }) : /*#__PURE__*/ jsx_runtime_.jsx("a", {
         href: destination,
         className: (Stamp_module_default()).stamp,
-        children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
+        children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
             src: image,
-            alt: ""
+            alt: "",
+            layout: "raw",
+            width: 110,
+            height: 110
         })
     });
 };
 
 ;// CONCATENATED MODULE: ./pages/passport.js
+
 
 
 
@@ -98,6 +106,9 @@ const getStaticProps = async ()=>{
         }
     };
 };
+function ImageLoader({ src  }) {
+    return `https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/${src}`;
+}
 function Passport({ data  }) {
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
         children: [
@@ -132,9 +143,13 @@ function Passport({ data  }) {
                                 children: [
                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                         className: (Passport_module_default()).image,
-                                        children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                                            src: "https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/jane.png",
-                                            alt: ""
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                                            loader: ImageLoader,
+                                            src: "jane.png",
+                                            alt: "Jane Doe",
+                                            layout: "intrinsic",
+                                            width: 161,
+                                            height: 161
                                         })
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
@@ -190,6 +205,38 @@ function Passport({ data  }) {
 
 /***/ }),
 
+/***/ 4957:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/head.js");
+
+/***/ }),
+
+/***/ 744:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/image-config-context.js");
+
+/***/ }),
+
+/***/ 5843:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/image-config.js");
+
+/***/ }),
+
+/***/ 9232:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/utils.js");
+
+/***/ }),
+
 /***/ 968:
 /***/ ((module) => {
 
@@ -221,7 +268,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [466,272,351], () => (__webpack_exec__(437)));
+var __webpack_exports__ = __webpack_require__.X(0, [686,675,466,272,351], () => (__webpack_exec__(437)));
 module.exports = __webpack_exports__;
 
 })();

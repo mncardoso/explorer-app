@@ -34,11 +34,12 @@ __webpack_require__.r(__webpack_exports__);
 
 const getStaticProps = async ()=>{
     const data = _data_data__WEBPACK_IMPORTED_MODULE_2__/* .destinations.map */ .MQ.map((d)=>({
-            destination: d.destination.toString(),
-            image: d.image.toString(),
-            location: d.location.toString(),
-            type: d.type.toString(),
-            distance: d.distance.toString(),
+            destination: d.destination,
+            image: d.image,
+            header: d.header,
+            location: d.location,
+            type: d.type,
+            distance: d.distance,
             fav: d.fav,
             tags: d.tags.map((t)=>({
                     id: t.id,
@@ -130,6 +131,34 @@ function Home({ data  }) {
 
 /***/ }),
 
+/***/ 4957:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/head.js");
+
+/***/ }),
+
+/***/ 744:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/image-config-context.js");
+
+/***/ }),
+
+/***/ 5843:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/image-config.js");
+
+/***/ }),
+
+/***/ 9232:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/utils.js");
+
+/***/ }),
+
 /***/ 968:
 /***/ ((module) => {
 
@@ -165,7 +194,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [466,272,351,750,914], () => (__webpack_exec__(8103)));
+var __webpack_exports__ = __webpack_require__.X(0, [686,675,466,272,351,750,914], () => (__webpack_exec__(8103)));
 module.exports = __webpack_exports__;
 
 })();

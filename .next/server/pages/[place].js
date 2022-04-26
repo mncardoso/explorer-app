@@ -60,6 +60,9 @@ var head_ = __webpack_require__(968);
 var head_default = /*#__PURE__*/__webpack_require__.n(head_);
 // EXTERNAL MODULE: external "next/router"
 var router_ = __webpack_require__(1853);
+// EXTERNAL MODULE: ./node_modules/next/image.js
+var next_image = __webpack_require__(5675);
+var image_default = /*#__PURE__*/__webpack_require__.n(next_image);
 // EXTERNAL MODULE: ./styles/pages/Place.module.css
 var Place_module = __webpack_require__(5829);
 var Place_module_default = /*#__PURE__*/__webpack_require__.n(Place_module);
@@ -79,6 +82,7 @@ var Nearby_module_default = /*#__PURE__*/__webpack_require__.n(Nearby_module);
 ;// CONCATENATED MODULE: ./Components/misc/Nearby.js
 
 
+
 let Nearby = ({ title , image  })=>{
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
         href: "",
@@ -86,9 +90,12 @@ let Nearby = ({ title , image  })=>{
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                 className: (Nearby_module_default()).place_nearby_image,
-                children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
                     src: image,
-                    alt: title
+                    alt: title,
+                    layout: "raw",
+                    width: 166,
+                    height: 166
                 })
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("div", {
@@ -112,10 +119,12 @@ let Nearby = ({ title , image  })=>{
 
 
 
+
 const getStaticProps = async (context)=>{
     const data = data_data/* destinations.map */.MQ.map((d)=>d.destination === context.params.place ? {
             destination: d.destination,
             image: d.image,
+            header: d.header,
             location: d.location,
             type: d.type,
             distance: d.distance,
@@ -196,9 +205,12 @@ function Page({ data  }) {
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                         className: (Place_module_default()).image,
-                                        children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
                                             src: data[0].header,
-                                            alt: ""
+                                            alt: "moon",
+                                            layout: "raw",
+                                            width: 414,
+                                            height: 215
                                         })
                                     })
                                 ]
@@ -280,6 +292,38 @@ function Page({ data  }) {
 
 /***/ }),
 
+/***/ 4957:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/head.js");
+
+/***/ }),
+
+/***/ 744:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/image-config-context.js");
+
+/***/ }),
+
+/***/ 5843:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/image-config.js");
+
+/***/ }),
+
+/***/ 9232:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/shared/lib/utils.js");
+
+/***/ }),
+
 /***/ 968:
 /***/ ((module) => {
 
@@ -319,7 +363,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [466,272,351,552], () => (__webpack_exec__(595)));
+var __webpack_exports__ = __webpack_require__.X(0, [686,675,466,272,351,552], () => (__webpack_exec__(595)));
 module.exports = __webpack_exports__;
 
 })();

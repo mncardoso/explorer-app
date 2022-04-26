@@ -161,6 +161,7 @@
 }
 .feedback > a > img {
 	width: 100%;
+	height: auto;
 	border-radius: 100%;
 	box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 20%);
 }

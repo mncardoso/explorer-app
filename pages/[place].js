@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { withRouter } from "next/router";
+import Image from "next/image";
 import styles from "../styles/pages/Place.module.css";
 import { destinations, near_by } from "../data/data";
 import { TopBar } from "../Components/Layout/TopBar";
@@ -15,6 +16,7 @@ export const getStaticProps = async (context) => {
 				? {
 						destination: d.destination,
 						image: d.image,
+						header: d.header,
 						location: d.location,
 						type: d.type,
 						distance: d.distance,
@@ -65,7 +67,13 @@ function Page({ data }) {
 							<p>{data[0].location}</p>
 						</div>
 						<div className={styles.image}>
-							<img src={data[0].header} alt=""></img>
+							<Image
+								src={data[0].header}
+								alt="moon"
+								layout="raw"
+								width={414}
+								height={215}
+							/>
 						</div>
 					</div>
 					<div className={styles.content}>

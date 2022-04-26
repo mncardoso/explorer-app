@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import styles from "../styles/pages/Passport.module.css";
 import { stamps } from "../data/data";
 import { TopBar } from "../Components/Layout/TopBar";
@@ -18,6 +19,10 @@ export const getStaticProps = async () => {
 	};
 };
 
+function ImageLoader({ src }) {
+	return `https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/${src}`;
+}
+
 export default function Passport({ data }) {
 	return (
 		<>
@@ -35,10 +40,14 @@ export default function Passport({ data }) {
 				<div className={styles.home}>
 					<div className={styles.image_header}>
 						<div className={styles.image}>
-							<img
-								src="https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/jane.png"
-								alt=""
-							></img>
+							<Image
+								loader={ImageLoader}
+								src={"jane.png"}
+								alt={"Jane Doe"}
+								layout="intrinsic"
+								width={161}
+								height={161}
+							/>
 						</div>
 						<div className={styles.info}>
 							<h6>Name</h6>

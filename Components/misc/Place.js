@@ -1,8 +1,8 @@
 import { useRouter } from "next/router";
 import styles from "../../styles/misc/Place.module.css";
+import Image from "next/image";
 
 export let Place = ({
-	key,
 	destination,
 	image,
 	location,
@@ -54,7 +54,7 @@ export let Place = ({
 				<p>{location}</p>
 			</div>
 			<div className={styles.image}>
-				<img src={image} alt=""></img>
+				<Image src={image} alt={""} layout="raw" width={166} height={166} />
 			</div>
 		</a>
 	);

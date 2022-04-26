@@ -1,9 +1,14 @@
 import Head from "next/head";
+import Image from "next/image";
 import styles from "../styles/pages/Index.module.css";
 import { TopBar } from "../Components/Layout/TopBar.js";
 import { SearchField } from "../Components/Layout/SearchField";
 import { Button } from "../Components/Buttons/Button";
 import { Keyboard } from "../Components/misc/Keyboard";
+
+function ImageLoader({ src }) {
+	return `https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/${src}`;
+}
 
 export default function Home() {
 	return (
@@ -78,11 +83,16 @@ export default function Home() {
 							<Keyboard destination={"./list_beach"} />
 						</div>
 					</div>
-					<img
-						className={styles.background}
-						src="https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/SpaceMan.png"
-						alt=""
-					/>
+					<div className={styles.background}>
+						<Image
+							loader={ImageLoader}
+							src="SpaceMan.png"
+							alt=""
+							layout="raw"
+							width={414}
+							height={896}
+						/>
+					</div>
 					<div className="bar">
 						<div className="bar_black"></div>
 					</div>

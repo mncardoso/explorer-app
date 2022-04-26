@@ -33,9 +33,13 @@ export default function Moon() {
 							<p>Moon</p>
 						</div>
 						<div className={styles.image}>
-							<img
-								src="https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/Moon%20H.png"
-								alt="Moon"
+							<Image
+								loader={ImageLoader}
+								src={"Moon%20H.png"}
+								alt="moon"
+								layout="raw"
+								width={414}
+								height={215}
 							/>
 						</div>
 					</div>

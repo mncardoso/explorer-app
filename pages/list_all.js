@@ -8,11 +8,12 @@ import { Place } from "../Components/misc/Place";
 
 export const getStaticProps = async () => {
 	const data = destinations.map((d) => ({
-		destination: d.destination.toString(),
-		image: d.image.toString(),
-		location: d.location.toString(),
-		type: d.type.toString(),
-		distance: d.distance.toString(),
+		destination: d.destination,
+		image: d.image,
+		header: d.header,
+		location: d.location,
+		type: d.type,
+		distance: d.distance,
 		fav: d.fav,
 		tags: d.tags.map((t) => ({ id: t.id, type: t.type, time: t.time })),
 	}));

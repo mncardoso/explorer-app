@@ -1,6 +1,10 @@
 import Head from "next/head";
+import Image from "next/image";
 import styles from "../styles/pages/Map.module.css";
-import { TopBar } from "../Components/Layout/TopBar";
+
+function ImageLoader({ src }) {
+	return `https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/${src}`;
+}
 
 export default function Map() {
 	return (
@@ -12,13 +16,16 @@ export default function Map() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<div className="content">
-				<TopBar />
 				<div className={styles.home}>
 					<div className={styles.image}>
-						<img
-							src="https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/maps.png"
-							alt=""
-						></img>
+						<Image
+							loader={ImageLoader}
+							src="maps.png"
+							alt="map"
+							layout="raw"
+							width={581}
+							height={1259}
+						/>
 					</div>
 					<a href={"javascript:history.back()"} className={styles.button}>
 						Will open default map app

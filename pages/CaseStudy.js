@@ -9,6 +9,10 @@ function ImageLoader({ src }) {
 	return `https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/assets/${src}`;
 }
 
+function TwitterImageLoader({ src }) {
+	return `https://pbs.twimg.com/profile_images/${src}`;
+}
+
 export default function Home() {
 	return (
 		<>
@@ -215,10 +219,14 @@ export default function Home() {
 							target="_blank"
 							rel="noreferrer"
 						>
-							<img
-								src="https://pbs.twimg.com/profile_images/1126446972880207876/GVtXo5V4_400x400.png"
+							<Image
+								loader={TwitterImageLoader}
+								src={"1126446972880207876/GVtXo5V4_400x400.png"}
 								alt="Patricia Reiners"
-							></img>
+								layout="raw"
+								width={400}
+								height={400}
+							/>
 						</a>
 						<div>
 							<h3>Patricia Reiners</h3>

@@ -13,6 +13,7 @@ export const getStaticProps = async () => {
 				? {
 						destination: d.destination,
 						image: d.image,
+						header: d.header,
 						location: d.location,
 						type: d.type,
 						distance: d.distance,

@@ -21,8 +21,8 @@
 [dev]
 framework = "#static"
 
-[[plugins]]
-package = "../plugin-wrapper/"
+  ##[[plugins]]
+  ## package = "../plugin-wrapper/"
 
 [[plugins]]
 package = "@netlify/plugin-local-install-core"

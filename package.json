@@ -1,5 +1,5 @@
 {
-	"name": "explorer.app",
+	"name": "explorer-app",
 	"version": "3.0.0",
 	"description": "Explorer App is a conseptualized web application for exploring the world.",
 	"main": "index.js",
@@ -13,7 +13,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/mncardoso/explorer.app.git"
+		"url": "git+https://github.com/mncardoso/explorer-app.git"
 	},
 	"keywords": [
 		"explorer",
@@ -22,7 +22,7 @@
 	"author": "Miguel Cardoso",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/mncardoso/explorer.app/issues"
+		"url": "https://github.com/mncardoso/explorer-app/issues"
 	},
 	"homepage": "https://explorer.miguel-cardoso.com",
 	"dependencies": {

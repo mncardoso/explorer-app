@@ -11,6 +11,6 @@ Installs all dependencies for the project.
 Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### `npm run build`
+### `npm run export`
 
-Builds the app for production to the `build` folder.
+Builds the app for production to the `out` folder.

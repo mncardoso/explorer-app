@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "../../styles/Buttons/ButtonPlace.module.css";
 
 export let ButtonPlace = ({ input, destination, active }) => {
@@ -8,8 +9,8 @@ export let ButtonPlace = ({ input, destination, active }) => {
 		activeState = styles.button_inactive;
 	}
 	return (
-		<a href={destination} className={activeState}>
-			{input}
-		</a>
+		<Link href={destination} passHref replace>
+			<a className={activeState}>{input}</a>
+		</Link>
 	);
 };

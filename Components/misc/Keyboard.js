@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "../../styles/misc/Keyboard.module.css";
 
 export let Keyboard = ({ destination }) => {
@@ -62,9 +63,9 @@ export let Keyboard = ({ destination }) => {
 				<div className={styles.space}>
 					<p>space</p>
 				</div>
-				<a className={styles.go} href={destination}>
-					Go
-				</a>
+				<Link href={destination} passHref replace>
+					<a className={styles.go}>Go</a>
+				</Link>
 			</div>
 			<div className={styles.row_5}>
 				<div className={styles.emoji}>

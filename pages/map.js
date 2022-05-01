@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/pages/Map.module.css";
@@ -27,9 +28,9 @@ export default function Map() {
 							height={1259}
 						/>
 					</div>
-					<a href={"javascript:history.back()"} className={styles.button}>
-						Will open default map app
-					</a>
+					<Link href={"javascript:history.back()"} passHref replace>
+						<a className={styles.button}>Will open default map app</a>
+					</Link>
 				</div>
 			</div>
 		</>

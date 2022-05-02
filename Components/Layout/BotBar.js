@@ -5,7 +5,7 @@ export let BotBar = () => {
 	return (
 		<div className={styles.bot_bar}>
 			<div className={styles.icons}>
-				<Link href={"./list_all"}>
+				<Link href={"../list_all"}>
 					<a>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -23,7 +23,7 @@ export let BotBar = () => {
 						</svg>
 					</a>
 				</Link>
-				<Link href={"./list_fav"} passHref replace>
+				<Link href={"../list_fav"} passHref replace>
 					<a>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +45,7 @@ export let BotBar = () => {
 						</svg>
 					</a>
 				</Link>
-				<Link href={"./passport"} passHref replace>
+				<Link href={"../passport"} passHref replace>
 					<a>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"

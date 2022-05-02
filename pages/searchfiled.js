@@ -7,7 +7,7 @@ import { Button } from "../Components/Buttons/Button";
 import { Keyboard } from "../Components/misc/Keyboard";
 
 function ImageLoader({ src }) {
-	return `https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/${src}`;
+	return `https://s3.eu-north-1.amazonaws.com/web.mc/assets.explorer/${src}`;
 }
 
 export default function Home() {
@@ -73,20 +73,20 @@ export default function Home() {
 						<div>
 							<SearchField
 								input={"Somewhere that I can swim|"}
-								destination={"./searchfiled"}
+								destination={"../searchfiled"}
 							/>
 							<div className={styles.button}>
-								<Button input={"Let's explore"} destination={"./list_all"} />
+								<Button input={"Let's explore"} destination={"../list_all"} />
 							</div>
 						</div>
 						<div>
-							<Keyboard destination={"./list_beach"} />
+							<Keyboard destination={"../list_beach"} />
 						</div>
 					</div>
 					<div className={styles.background}>
 						<Image
 							loader={ImageLoader}
-							src="SpaceMan.png"
+							src="sapace_man.png"
 							alt=""
 							layout="raw"
 							width={414}

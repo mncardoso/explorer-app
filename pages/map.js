@@ -4,7 +4,7 @@ import Image from "next/image";
 import styles from "../styles/pages/Map.module.css";
 
 function ImageLoader({ src }) {
-	return `https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/${src}`;
+	return `https://s3.eu-north-1.amazonaws.com/web.mc/assets.explorer/${src}`;
 }
 
 export default function Map() {

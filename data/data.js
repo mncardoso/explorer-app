@@ -2,20 +2,20 @@ export const stamps = [
 	{
 		id: 0,
 		image:
-			"https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/Stamp_RichmondPark.svg",
-		destination: "./RichmondPark",
+			"https://s3.eu-north-1.amazonaws.com/web.mc/assets.explorer/stamps/stamp_richmond-park.svg",
+		destination: "../RichmondPark",
 	},
 	{
 		id: 1,
 		image:
-			"https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/Stamp_Wells.svg",
-		destination: "./Wells",
+			"https://s3.eu-north-1.amazonaws.com/web.mc/assets.explorer/stamps/stamp_wells.svg",
+		destination: "../Wells",
 	},
 	{
 		id: 2,
 		image:
-			"https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/Stamp_DurdleDoor.svg",
-		destination: "./DurdleDoor",
+			"https://s3.eu-north-1.amazonaws.com/web.mc/assets.explorer/stamps/stamp_durdle-door.svg",
+		destination: "../DurdleDoor",
 	},
 	{
 		id: 3,
@@ -66,11 +66,11 @@ export const stamps = [
 
 export const destinations = [
 	{
-		destination: "RichmondPark",
+		destination: "richmond-park",
 		image:
-			"https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/Richmond Park.png",
+			"https://s3.eu-north-1.amazonaws.com/web.mc/assets.explorer/placese/richmond-park.png",
 		header:
-			"https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/Richmond Park H.png",
+			"https://s3.eu-north-1.amazonaws.com/web.mc/assets.explorer/placese/richmond-park_header.png",
 		location: "Richmond Park",
 		type: "park",
 		distance: "37 km",
@@ -82,11 +82,11 @@ export const destinations = [
 		],
 	},
 	{
-		destination: "Stamford",
+		destination: "stamford",
 		image:
-			"https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/Stamford.png",
+			"https://s3.eu-north-1.amazonaws.com/web.mc/assets.explorer/placese/stamford.png",
 		header:
-			"https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/Stamford H.png",
+			"https://s3.eu-north-1.amazonaws.com/web.mc/assets.explorer/placese/stamford_header.png",
 		location: "Stamford",
 		type: "city",
 		distance: "122 km",
@@ -94,11 +94,11 @@ export const destinations = [
 		tags: [{ id: 0, type: "time", time: "24h" }],
 	},
 	{
-		destination: "Brighton",
+		destination: "brighton",
 		image:
-			"https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/Brighton.png",
+			"https://s3.eu-north-1.amazonaws.com/web.mc/assets.explorer/placese/brighton.png",
 		header:
-			"https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/Brighton H.png",
+			"https://s3.eu-north-1.amazonaws.com/web.mc/assets.explorer/placese/brighton_header.png",
 		location: "Brighton",
 		type: "seaside",
 		distance: "126 km",
@@ -106,11 +106,11 @@ export const destinations = [
 		tags: [{ id: 0, type: "time", time: "24h" }],
 	},
 	{
-		destination: "CotonMannor",
+		destination: "coton-manor",
 		image:
-			"https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/Coton Manor.png",
+			"https://s3.eu-north-1.amazonaws.com/web.mc/assets.explorer/placese/coton-manor.png",
 		header:
-			"https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/Coton Manor H.png",
+			"https://s3.eu-north-1.amazonaws.com/web.mc/assets.explorer/placese/coton-manor_header.png",
 		location: "Coton Mannor",
 		type: "park",
 		distance: "147 km",
@@ -118,11 +118,11 @@ export const destinations = [
 		tags: [{ id: 0, type: "time", time: "12PM-5:30PM" }],
 	},
 	{
-		destination: "SwanshurstPark",
+		destination: "swanshurst-park",
 		image:
-			"https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/Swanshurst Park.png",
+			"https://s3.eu-north-1.amazonaws.com/web.mc/assets.explorer/placese/swanshurst-park.png",
 		header:
-			"https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/Swanshurst Park H.png",
+			"https://s3.eu-north-1.amazonaws.com/web.mc/assets.explorer/placese/swanshurst-park_header.png",
 		location: "Swanshurst Park",
 		type: "park",
 		distance: "216 km",
@@ -133,11 +133,11 @@ export const destinations = [
 		],
 	},
 	{
-		destination: "DurdleDoor",
+		destination: "durdle-door",
 		image:
-			"https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/Durdle Door.png",
+			"https://s3.eu-north-1.amazonaws.com/web.mc/assets.explorer/placese/durdle-door.png",
 		header:
-			"https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/Durdle Door H.png",
+			"https://s3.eu-north-1.amazonaws.com/web.mc/assets.explorer/placese/durdle-door_header.png",
 		location: "Durdle Door",
 		type: "seaside",
 		distance: "268 km",
@@ -145,11 +145,11 @@ export const destinations = [
 		tags: [{ id: 0, type: "time", time: "24h" }],
 	},
 	{
-		destination: "Wells",
+		destination: "wells",
 		image:
-			"https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/Wells.png",
+			"https://s3.eu-north-1.amazonaws.com/web.mc/assets.explorer/placese/wells.png",
 		header:
-			"https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/Wells H.png",
+			"https://s3.eu-north-1.amazonaws.com/web.mc/assets.explorer/placese/wells_header.png",
 		location: "Wells",
 		type: "city",
 		distance: "282 km",
@@ -157,11 +157,11 @@ export const destinations = [
 		tags: [{ id: 0, type: "time", time: "24h" }],
 	},
 	{
-		destination: "Whitby",
+		destination: "whithby",
 		image:
-			"https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/Whithby.png",
+			"https://s3.eu-north-1.amazonaws.com/web.mc/assets.explorer/placese/whithby.png",
 		header:
-			"https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/Whithby H.png",
+			"https://s3.eu-north-1.amazonaws.com/web.mc/assets.explorer/placese/whithby_header.png",
 		location: "Whitby",
 		type: "city",
 		distance: "417 km",
@@ -169,11 +169,11 @@ export const destinations = [
 		tags: [{ id: 0, type: "time", time: "24h" }],
 	},
 	{
-		destination: "Cornwall",
+		destination: "cornwall",
 		image:
-			"https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/Cornwall.png",
+			"https://s3.eu-north-1.amazonaws.com/web.mc/assets.explorer/placese/cornwall.png",
 		header:
-			"https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/Cornwall H.png",
+			"https://s3.eu-north-1.amazonaws.com/web.mc/assets.explorer/placese/cornwall_header.png",
 		location: "Cornwall",
 		type: "seaside",
 		distance: "446 km",
@@ -187,30 +187,30 @@ export const near_by = [
 		id: 0,
 		title: "Local Busines",
 		image:
-			"https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/busines1.png",
+			"https://s3.eu-north-1.amazonaws.com/web.mc/assets.explorer/businesses/001.png",
 	},
 	{
 		id: 1,
 		title: "Local Busines",
 		image:
-			"https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/busines2.png",
+			"https://s3.eu-north-1.amazonaws.com/web.mc/assets.explorer/businesses/002.png",
 	},
 	{
 		id: 2,
 		title: "Local Busines",
 		image:
-			"https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/busines3.png",
+			"https://s3.eu-north-1.amazonaws.com/web.mc/assets.explorer/businesses/003.png",
 	},
 	{
 		id: 3,
 		title: "Local Busines",
 		image:
-			"https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/busines4.png",
+			"https://s3.eu-north-1.amazonaws.com/web.mc/assets.explorer/businesses/004.png",
 	},
 	{
 		id: 4,
 		title: "Local Busines",
 		image:
-			"https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/busines5.png",
+			"https://s3.eu-north-1.amazonaws.com/web.mc/assets.explorer/businesses/005.png",
 	},
 ];

@@ -1,7 +1,7 @@
 import "../styles/globals.css";
 import "normalize.css/normalize.css";
 import Head from "next/head";
-import { SEO } from "../components/seo";
+import { SEO } from "../Components/seo";
 
 function MyApp({ Component, pageProps }) {
 	return (

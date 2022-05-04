@@ -49,12 +49,6 @@ function Page({ data }) {
 		<>
 			<Head>
 				<title>Explorer App | {data[0].location}</title>
-				<meta
-					name="description"
-					content="Explorer App is a concept of a web application for exploring the world."
-				/>
-				<meta name="theme-color" content="#d96e1e" />
-				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<div className="content">
 				<TopBar />

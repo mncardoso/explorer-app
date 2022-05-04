@@ -14,7 +14,6 @@ export default function Map() {
 				<title>Explorer App | Map</title>
 				<meta name="description" content="" />
 				<meta name="theme-color" content="#ffffff4d" />
-				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<div className="content">
 				<div className={styles.home}>

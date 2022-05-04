@@ -22,8 +22,6 @@ export default function Home() {
 					name="description"
 					content="Case Study for Explorer App | Explorer App is a concept of a web application for exploring the world."
 				/>
-				<meta name="theme-color" content="#fffbf2" />
-				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<div className={styles.case_study}>
 				<div className={styles.home}>

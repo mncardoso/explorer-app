@@ -14,12 +14,6 @@ export default function Home() {
 		<>
 			<Head>
 				<title>Explorer App | Home</title>
-				<meta
-					name="description"
-					content="Explorer App is a concept of a web application for exploring the world."
-				/>
-				<meta name="theme-color" content="#d96e1e" />
-				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<div className="content">
 				<TopBar />

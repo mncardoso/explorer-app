@@ -20,7 +20,6 @@ export default function Moon() {
 					content="Moon Ester Egg | Explorer App is a concept of a web application for exploring the world."
 				/>
 				<meta name="theme-color" content="#291f63" />
-				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<div className="content">
 				<TopBar />

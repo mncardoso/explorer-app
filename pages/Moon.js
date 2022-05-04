@@ -7,7 +7,7 @@ import { ButtonPlace } from "../Components/Buttons/ButtonPlace";
 import { Tag } from "../Components/misc/Tag";
 
 function ImageLoader({ src }) {
-	return `https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/${src}`;
+	return `https://s3.eu-north-1.amazonaws.com/web.mc/assets.explorer/${src}`;
 }
 
 export default function Moon() {
@@ -34,7 +34,7 @@ export default function Moon() {
 						<div className={styles.image}>
 							<Image
 								loader={ImageLoader}
-								src={"Moon%20H.png"}
+								src={"placese/moon_header.png"}
 								alt="moon"
 								layout="raw"
 								width={414}
@@ -54,7 +54,7 @@ export default function Moon() {
 							/>
 							<ButtonPlace
 								input={"Case Study"}
-								destination={"./CaseStudy"}
+								destination={"../CaseStudy"}
 								active={true}
 							/>
 						</div>
@@ -70,7 +70,7 @@ export default function Moon() {
 						<div className={styles.made_by}>
 							<Image
 								loader={ImageLoader}
-								src={"Made%20By.svg"}
+								src={"made_by.svg"}
 								alt="Made By Miguel Cardoso"
 								width={298.492}
 								height={40.142}

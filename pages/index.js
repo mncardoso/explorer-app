@@ -6,7 +6,7 @@ import { Button } from "../Components/Buttons/Button";
 import styles from "../styles/pages/Index.module.css";
 
 function ImageLoader({ src }) {
-	return `https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/${src}`;
+	return `https://s3.eu-north-1.amazonaws.com/web.mc/assets.explorer/${src}`;
 }
 
 export default function Home() {
@@ -64,16 +64,16 @@ export default function Home() {
 							<h1>Explorer</h1>
 						</div>
 						<div>
-							<SearchField input={""} destination={"./searchfiled"} />
+							<SearchField input={""} destination={"../searchfiled"} />
 							<div className={styles.button}>
-								<Button input={"Let's explore"} destination={"./list_all"} />
+								<Button input={"Let's explore"} destination={"../list_all"} />
 							</div>
 						</div>
 					</div>
 					<div className={styles.background}>
 						<Image
 							loader={ImageLoader}
-							src="SpaceMan.png"
+							src="sapace_man.png"
 							alt=""
 							layout="raw"
 							width={414}

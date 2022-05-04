@@ -6,7 +6,7 @@ import { ButtonPlace } from "../Components/Buttons/ButtonPlace.js";
 import styles from "../styles/pages/CaseStudy.module.css";
 
 function ImageLoader({ src }) {
-	return `https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/assets/${src}`;
+	return `https://s3.eu-north-1.amazonaws.com/web.mc/assets.explorer/${src}`;
 }
 
 function TwitterImageLoader({ src }) {
@@ -148,7 +148,7 @@ export default function Home() {
 						<div className={styles.mood_board_img}>
 							<Image
 								loader={ImageLoader}
-								src={"expMoodBoard.png"}
+								src={"mood_board.png"}
 								alt="Mood board"
 								layout="responsive"
 								width={1285}
@@ -190,7 +190,7 @@ export default function Home() {
 						<div className={styles.design_img}>
 							<Image
 								loader={ImageLoader}
-								src="expDesign.png"
+								src="design.png"
 								alt="Design"
 								layout="responsive"
 								width={1285}
@@ -236,7 +236,7 @@ export default function Home() {
 					</div>
 					<div className={styles.footer}>
 						<ButtonPlace
-							destination={"./"}
+							destination={"../"}
 							input={"Back to home screen"}
 							active={true}
 						/>

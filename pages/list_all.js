@@ -34,7 +34,7 @@ export default function Home({ data }) {
 				<TopBar />
 				<div className={styles.home}>
 					<div className={styles.top_bar}>
-						<SearchField input={""} destination={"./searchfiled"} />
+						<SearchField input={""} destination={"../searchfiled"} />
 					</div>
 					<div className={styles.container}>
 						<div className={styles.content}>
@@ -51,8 +51,8 @@ export default function Home({ data }) {
 							))}
 							<Place
 								key="Moon"
-								destination="./Moon"
-								image="https://s3.eu-north-1.amazonaws.com/web.miguel.cardoso/explorer.assets/Moon.png"
+								destination="../Moon"
+								image="https://s3.eu-north-1.amazonaws.com/web.mc/assets.explorer/placese/moon.png"
 								location="Moon"
 								type="city"
 								distance="384.4 Mm"

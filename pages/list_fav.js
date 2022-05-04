@@ -40,7 +40,7 @@ export default function Home({ data }) {
 				<TopBar />
 				<div className={styles.home}>
 					<div className={styles.top_bar}>
-						<SearchField input={""} destination={"./searchfiled"} />
+						<SearchField input={""} destination={"../searchfiled"} />
 					</div>
 					<div className={styles.container}>
 						<div className={styles.content}>

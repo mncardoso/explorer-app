@@ -79,7 +79,7 @@ function Page({ data }) {
 						<div className={styles.buttons}>
 							<ButtonPlace
 								input={"Get me there"}
-								destination={"./map"}
+								destination={"../map"}
 								active={true}
 							/>
 							<ButtonPlace

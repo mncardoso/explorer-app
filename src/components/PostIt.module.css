@@ -1,0 +1,86 @@
+.BluePostIt {
+  margin: 2px;
+  border-radius: 4px;
+  background-color: #93a0ba;
+  overflow: hidden;
+  color: white;
+}
+.BluePostIt > div {
+  background-color: #6d7fa2;
+  width: 100%;
+  height: 24px;
+}
+.BluePostIt > p {
+  margin: 4px;
+  font-weight: var(--fontWeight-medium);
+  font-size: 1rem;
+}
+
+.GreyPostIt {
+  margin: 2px;
+  border-radius: 4px;
+  background-color: #919398;
+  overflow: hidden;
+  color: white;
+}
+.GreyPostIt > div {
+  background-color: #6b6d74;
+  width: 100%;
+  height: 24px;
+}
+.GreyPostIt > p {
+  margin: 4px;
+  font-weight: var(--fontWeight-medium);
+  font-size: 1rem;
+}
+
+.PinkPostIt {
+  margin: 2px;
+  border-radius: 4px;
+  background-color: #eca18d;
+  overflow: hidden;
+  color: white;
+}
+.PinkPostIt > div {
+  background-color: #db9683;
+  width: 100%;
+  height: 24px;
+}
+.PinkPostIt > p {
+  margin: 4px;
+  font-weight: var(--fontWeight-medium);
+  font-size: 1rem;
+}
+
+.YellowPostIt {
+  margin: 2px;
+  border-radius: 4px;
+  background-color: #efad27;
+  overflow: hidden;
+  color: white;
+}
+.YellowPostIt > div {
+  background-color: #e99019;
+  width: 100%;
+  height: 24px;
+}
+.YellowPostIt > p {
+  margin: 4px;
+  font-weight: var(--fontWeight-medium);
+  font-size: 1rem;
+}
+
+.EmptyPostIt {
+  margin: 2px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.EmptyPostIt > div {
+  width: 100%;
+  height: 24px;
+}
+.EmptyPostIt > p {
+  margin: 4px;
+  font-weight: var(--fontWeight-medium);
+  font-size: 1rem;
+}

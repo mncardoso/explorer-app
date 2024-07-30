@@ -1,0 +1,10 @@
+.stamp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  contain: overflow;
+  border: 2px dashed var(--color-effect-line);
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+}

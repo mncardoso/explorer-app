@@ -2,15 +2,11 @@
 
 ## Available Scripts
 
-### `npm install`
+### `pnpm install`
 
 Installs all dependencies for the project.
 
-### `npm run dev`
+### `pnpm run dev`
 
 Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-### `npm run export`
-
-Builds the app for production to the `out` folder.

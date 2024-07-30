@@ -1,0 +1,94 @@
+.home {
+  display: block;
+  justify-content: space-between;
+  background-color: var(--color-foreground);
+  padding: 1rem;
+  width: 100vw;
+  height: 100vh;
+}
+.place {
+  display: flex;
+  position: relative;
+  border-radius: 10px;
+  height: 166px;
+  color: var(--color-text);
+}
+
+.star {
+  position: absolute;
+  margin-left: 5px;
+}
+
+.distance {
+  display: flex;
+  position: absolute;
+  align-content: center;
+  justify-content: flex-end;
+  backdrop-filter: blur(30px);
+  margin-left: 83px;
+  border-radius: 0px 10px;
+  background-color: rgba(0, 0, 0, 0.25);
+  width: 83px;
+  height: 23px;
+}
+.distance p {
+  margin-right: 5px;
+  padding: 2px;
+  font-weight: var(--fontWeight-medium);
+  font-size: 0.8125rem;
+}
+
+.city {
+  position: absolute;
+  bottom: 0px;
+  backdrop-filter: blur(30px);
+  margin-top: 122px;
+  border-radius: 0px 0px 10px 10px;
+  background-color: var(--color-city-alpha);
+  width: 166px;
+  height: 44px;
+  text-align: center;
+}
+.city p {
+  padding: 10px;
+  font-weight: var(--fontWeight-medium);
+}
+
+.seaside {
+  position: absolute;
+  bottom: 0px;
+  backdrop-filter: blur(30px);
+  margin-top: 122px;
+  border-radius: 0px 0px 10px 10px;
+  background-color: var(--color-seaside-alpha);
+  width: 166px;
+  height: 44px;
+  text-align: center;
+}
+.seaside p {
+  padding: 10px;
+  font-weight: var(--fontWeight-medium);
+}
+
+.park {
+  position: absolute;
+  bottom: 0px;
+  backdrop-filter: blur(30px);
+  margin-top: 122px;
+  border-radius: 0px 0px 10px 10px;
+  background-color: var(--color-park-alpha);
+  width: 166px;
+  height: 44px;
+  text-align: center;
+}
+.park p {
+  padding: 10px;
+  font-weight: var(--fontWeight-medium);
+}
+
+.image {
+  top: 0px;
+  left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+}

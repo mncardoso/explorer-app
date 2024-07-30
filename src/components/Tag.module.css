@@ -1,0 +1,21 @@
+.tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  border-radius: 10px;
+  background-color: var(--color-effect-grey);
+  padding: 1px;
+  width: auto;
+  height: 20px;
+}
+.icon {
+  margin: 2px 5px 0px 5px;
+}
+.text {
+  margin-right: 5px;
+  color: var(--color-text);
+  font-weight: var(--fontWeight-medium);
+  font-size: 0.8333rem;
+  text-wrap: nowrap;
+}

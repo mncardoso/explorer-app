@@ -1,0 +1,12 @@
+.button {
+  display: block;
+  align-content: center;
+  backdrop-filter: blur(30px);
+  border-radius: 10px;
+  background-color: #f8af7893;
+  padding: 0.625rem;
+  width: 9.438rem;
+  height: 2.75rem;
+  color: var(--color-text);
+  text-align: center;
+}

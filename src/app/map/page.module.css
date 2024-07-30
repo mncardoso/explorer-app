@@ -1,0 +1,44 @@
+.home {
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  z-index: 100;
+  width: 100vw;
+  max-width: var(--maxWidth);
+  height: 100vh;
+  overflow: hidden;
+}
+
+.image {
+  display: flex;
+  position: relative;
+  z-index: 105;
+  width: 100%;
+  overflow: hidden;
+}
+.image > img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.button {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  align-content: center;
+  transform: translate(-50%, -50%);
+  z-index: 110;
+  backdrop-filter: blur(30px);
+  border-radius: 10px;
+  background-color: #ffffff4d;
+  padding: 15px;
+  width: 354px;
+  height: 68px;
+  color: var(--color-text);
+  font-weight: var(--fontWeight-medium);
+  font-size: 1.5625rem;
+  text-align: center;
+}

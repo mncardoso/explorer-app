@@ -1,0 +1,29 @@
+.button_active {
+  display: block;
+  align-content: center;
+  backdrop-filter: blur(30px);
+  border-radius: 10px;
+  background-color: rgb(217, 110, 30);
+  padding: 0.625rem;
+  width: 11.25rem;
+  height: 2.75rem;
+  color: var(--color-text);
+  font-weight: var(--fontWeight-medium);
+  text-align: center;
+  text-wrap: nowrap;
+}
+.button_inactive {
+  display: block;
+  align-content: center;
+  backdrop-filter: blur(30px);
+  cursor: not-allowed;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.33);
+  padding: 0.625rem;
+  width: 11.25rem;
+  height: 2.75rem;
+  color: rgba(0, 0, 0, 0.33);
+  font-weight: var(--fontWeight-medium);
+  text-align: center;
+  text-wrap: nowrap;
+}

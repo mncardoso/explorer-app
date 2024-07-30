@@ -1,0 +1,84 @@
+.accent_colour {
+  margin: 12px 8px 0 8px;
+  outline: 2px solid #735645;
+  outline-offset: 4px;
+  border: 2px dashed #735645;
+  border-radius: 4px;
+  background-color: var(--color-foreground);
+  padding: 4px;
+  height: 128px;
+  overflow: hidden;
+}
+.accent_colour > p {
+  color: white;
+  font-weight: var(--fontWeight-medium);
+  font-size: 1rem;
+}
+
+.background_colour {
+  margin: 12px 8px 0 8px;
+  outline: 2px solid #735645;
+  outline-offset: 4px;
+  border: 2px dashed #735645;
+  border-radius: 4px;
+  background-color: var(--color-background);
+  padding: 4px;
+  height: 128px;
+  overflow: hidden;
+}
+.background_colour > p {
+  color: black;
+  font-weight: var(--fontWeight-medium);
+  font-size: 1rem;
+}
+
+.seaside_colour {
+  margin: 12px 8px 0 8px;
+  outline: 2px solid #735645;
+  outline-offset: 4px;
+  border: 2px dashed #735645;
+  border-radius: 4px;
+  background-color: var(--color-seaside);
+  padding: 4px;
+  height: 128px;
+  overflow: hidden;
+}
+.seaside_colour > p {
+  color: white;
+  font-weight: var(--fontWeight-medium);
+  font-size: 1rem;
+}
+
+.park_colour {
+  margin: 12px 8px 0 8px;
+  outline: 2px solid #735645;
+  outline-offset: 4px;
+  border: 2px dashed #735645;
+  border-radius: 4px;
+  background-color: var(--color-park);
+  padding: 4px;
+  height: 128px;
+  overflow: hidden;
+}
+.park_colour p {
+  color: white;
+  font-weight: var(--fontWeight-medium);
+  font-size: 1rem;
+}
+
+.city_colour {
+  margin: 12px 8px 0 8px;
+  outline: 2px solid #735645;
+  outline-offset: 4px;
+  border: 2px dashed #735645;
+  border-radius: 4px;
+  background-color: var(--color-city);
+  padding: 4px;
+  height: 128px;
+  overflow: hidden;
+}
+.city_colour > p {
+  color: white;
+  font-weight: var(--fontWeight-medium);
+  font-size: 1rem;
+}

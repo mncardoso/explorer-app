@@ -1,53 +1,28 @@
 {
-	"name": "explorer-app",
-	"version": "3.0.0",
-	"description": "Explorer App is a conseptualized web application for exploring the world.",
-	"main": "index.js",
-	"private": false,
-	"scripts": {
-		"dev": "cross-env AUTOPREFIXER_GRID=autoplace next dev",
-		"build": "cross-env AUTOPREFIXER_GRID=autoplace next build",
-		"start": "next start",
-		"lint": "next lint",
-		"export": "npm run build && next export"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/mncardoso/explorer-app.git"
-	},
-	"keywords": [
-		"explorer",
-		"app"
-	],
-	"author": "Miguel Cardoso",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/mncardoso/explorer-app/issues"
-	},
-	"homepage": "https://explorer.miguel-cardoso.com",
-	"dependencies": {
-		"next": "12.1.5",
-		"normalize.css": "^8.0.1",
-		"react": "18.0.0",
-		"react-dom": "18.0.0"
-	},
-	"devDependencies": {
-		"autoprefixer": "^10.4.5",
-		"cross-env": "^7.0.3",
-		"eslint": "8.14.0",
-		"eslint-config-next": "12.1.5"
-	},
-	"browserslist": {
-		"production": [
-			">0.2%",
-			"not dead",
-			"not op_mini all"
-		],
-		"development": [
-			"last 1 chrome version",
-			"last 1 firefox version",
-			"last 1 safari version",
-			"last 1 ie version"
-		]
-	}
+  "name": "explorer-app",
+  "version": "4.0.0",
+  "description": "Explorer App is a conceptualized web application for exploring the world.",
+  "private": false,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "14.2.5",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "4.3.1",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
+    "prettier": "3.3.3",
+    "prettier-plugin-css-order": "2.1.2",
+    "typescript": "^5"
+  }
 }

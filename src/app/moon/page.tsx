@@ -40,9 +40,10 @@ export default function Home() {
             <Image
               src={ImageLoader('placese/moon_header.png')}
               alt="moon"
-              layout="raw"
               width={414}
               height={215}
+              style={{ width: '100%', height: 'auto' }}
+              priority
             />
           </div>
         </div>
@@ -52,7 +53,7 @@ export default function Home() {
           </div>
           <div className={styles.buttons}>
             <ButtonPlace input={'Get me there'} destination={''} active={false} />
-            <ButtonPlace input={'Case Study'} destination={'../CaseStudy'} active={true} />
+            <ButtonPlace input={'Case Study'} destination="/CaseStudy" active={true} />
           </div>
           <div className={styles.about}>
             <h3>About</h3>

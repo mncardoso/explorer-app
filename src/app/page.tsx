@@ -61,14 +61,21 @@ export default function Home() {
             <h1>Explorer</h1>
           </div>
           <div>
-            <SearchField input={''} destination={'../searchfield'} />
+            <SearchField input={''} destination="/searchfield" />
             <div className={styles.button}>
-              <Button input={"Let's explore"} destination={'../list_all'} />
+              <Button input={"Let's explore"} destination="/list_all" />
             </div>
           </div>
         </div>
         <div className={styles.background}>
-          <Image src={ImageLoader('sapace_man.png')} alt="" layout="raw" width={414} height={896} />
+          <Image
+            src={ImageLoader('sapace_man.png')}
+            alt=""
+            fill
+            sizes="(max-width: 28rem) 100vw, 28rem"
+            style={{ objectFit: 'cover' }}
+            priority
+          />
         </div>
         <div className="bar">
           <div className="bar_white"></div>

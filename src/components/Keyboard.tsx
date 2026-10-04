@@ -1,4 +1,4 @@
-// import Link from 'next/link';
+import Link from 'next/link';
 
 import styles from './Keyboard.module.css';
 
@@ -64,11 +64,9 @@ const Keyboard = ({ destination }: { destination: string }) => {
         <div className={styles.space}>
           <p>space</p>
         </div>
-        {/* <Link href={destination} passHref replace> */}
-        <a href={destination} className={styles.go}>
+        <Link href={destination} className={styles.go}>
           Go
-        </a>
-        {/* </Link> */}
+        </Link>
       </div>
       <div className={styles.row_5}>
         <div className={styles.emoji}>

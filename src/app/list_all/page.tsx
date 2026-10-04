@@ -24,14 +24,14 @@ export default function Home() {
       <TopBar />
       <div className={styles.home}>
         <div className={styles.top_bar}>
-          <SearchField input={''} destination={'../searchfield'} />
+          <SearchField input={''} destination="/searchfield" />
         </div>
         <div className={styles.container}>
           <div className={styles.content}>
             {data.map(d => (
               <Place
                 key={d.destination}
-                destination={`./${d.destination}`}
+                destination={`/${d.destination}`}
                 image={d.image}
                 location={d.location}
                 type={d.type}
@@ -41,7 +41,7 @@ export default function Home() {
             ))}
             <Place
               key="Moon"
-              destination="../moon"
+              destination="/moon"
               image="https://s3.eu-north-1.amazonaws.com/web.mc/assets.explorer/placese/moon.png"
               location="Moon"
               type="city"

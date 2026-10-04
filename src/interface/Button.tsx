@@ -1,13 +1,12 @@
-// import Link from "next/link";
+import Link from 'next/link';
+
 import styles from './Button.module.css';
 
 const Button = ({ input, destination }: { input: string; destination: string }) => {
   return (
-    // <Link href={destination} passHref replace>
-    <a href={destination} className={styles.button}>
+    <Link href={destination} className={styles.button}>
       {input}
-    </a>
-    // </Link>
+    </Link>
   );
 };
 

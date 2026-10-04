@@ -1,4 +1,4 @@
-// import Link from 'next/link';
+import Link from 'next/link';
 
 import styles from './SearchField.module.css';
 
@@ -7,8 +7,7 @@ const SearchField = ({ input, destination }: { input: string; destination: strin
   const textClass = input === '' ? styles.text_empty : styles.text_full;
   return (
     <div className={styles.search_field}>
-      {/* <Link href={destination} passHref replace> */}
-      <a href={destination}>
+      <Link href={destination}>
         <li>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
             <path
@@ -35,8 +34,7 @@ const SearchField = ({ input, destination }: { input: string; destination: strin
             ></path>
           </svg>
         </li>
-      </a>
-      {/* </Link> */}
+      </Link>
     </div>
   );
 };

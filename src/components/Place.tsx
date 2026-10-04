@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 import styles from './Place.module.css';
 
@@ -39,7 +40,7 @@ const Place = ({
   }
 
   return (
-    <a href={destination} className={styles.place}>
+    <Link href={destination} className={styles.place}>
       <div className={styles.star}>{star}</div>
       <div className={styles.distance}>
         <p>{distance}</p>
@@ -48,9 +49,9 @@ const Place = ({
         <p>{location}</p>
       </div>
       <div className={styles.image}>
-        <Image src={image} alt={''} layout="raw" width={166} height={166} />
+        <Image src={image} alt="" width={166} height={166} style={{ width: '100%', height: 'auto' }} />
       </div>
-    </a>
+    </Link>
   );
 };
 

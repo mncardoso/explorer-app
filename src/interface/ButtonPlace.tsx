@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import styles from './ButtonPlace.module.css';
 
 const ButtonPlace = ({
@@ -9,16 +11,24 @@ const ButtonPlace = ({
   destination: string;
   active: boolean;
 }) => {
-  let activeState;
-  if (active) {
-    activeState = styles.button_active;
-  } else {
-    activeState = styles.button_inactive;
+  const activeState = active ? styles.button_active : styles.button_inactive;
+
+  if (!destination) {
+    return <span className={activeState}>{input}</span>;
   }
+
+  if (destination.startsWith('http')) {
+    return (
+      <a href={destination} className={activeState} target="_blank" rel="noreferrer">
+        {input}
+      </a>
+    );
+  }
+
   return (
-    <a href={destination} className={activeState}>
+    <Link href={destination} className={activeState}>
       {input}
-    </a>
+    </Link>
   );
 };
 

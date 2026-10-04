@@ -129,9 +129,9 @@ export default function Home() {
             <Image
               src={ImageLoader('mood_board.png')}
               alt="Mood board"
-              layout="responsive"
               width={1285}
               height={751}
+              style={{ width: '100%', height: 'auto' }}
             />
           </div>
         </div>
@@ -170,9 +170,9 @@ export default function Home() {
             <Image
               src={ImageLoader('design.png')}
               alt="Design"
-              layout="responsive"
               width={1285}
               height={723}
+              style={{ width: '100%', height: 'auto' }}
             />
           </div>
         </div>
@@ -193,9 +193,9 @@ export default function Home() {
             <Image
               src={TwitterImageLoader('1126446972880207876/GVtXo5V4_400x400.png')}
               alt="Patricia Reiners"
-              layout="raw"
               width={400}
               height={400}
+              style={{ width: '100%', height: 'auto' }}
             />
           </a>
           <div>
@@ -204,7 +204,7 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.footer}>
-          <ButtonPlace destination={'../'} input={'Back to home screen'} active={true} />
+          <ButtonPlace destination="/" input={'Back to home screen'} active={true} />
           <ButtonPlace
             destination={'https://miguel-cardoso.com'}
             input={'Portfolio'}

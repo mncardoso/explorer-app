@@ -31,14 +31,14 @@ export default function Home() {
       <TopBar />
       <div className={styles.home}>
         <div className={styles.top_bar}>
-          <SearchField input={''} destination={'../searchfield'} />
+          <SearchField input={''} destination="/searchfield" />
         </div>
         <div className={styles.container}>
           <div className={styles.content}>
             {data.map(d => (
               <Place
                 key={d.destination}
-                destination={`./${d.destination}`}
+                destination={`/${d.destination}`}
                 image={d.image}
                 location={d.location}
                 type={d.type}

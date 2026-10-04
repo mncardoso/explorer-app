@@ -3,18 +3,18 @@ export const stamps = [
     id: 0,
     image:
       'https://s3.eu-north-1.amazonaws.com/web.mc/assets.explorer/stamps/stamp_richmond-park.svg',
-    destination: '../richmond-park',
+    destination: '/richmond-park',
   },
   {
     id: 1,
     image: 'https://s3.eu-north-1.amazonaws.com/web.mc/assets.explorer/stamps/stamp_wells.svg',
-    destination: '../wells',
+    destination: '/wells',
   },
   {
     id: 2,
     image:
       'https://s3.eu-north-1.amazonaws.com/web.mc/assets.explorer/stamps/stamp_durdle-door.svg',
-    destination: '../durdle-door',
+    destination: '/durdle-door',
   },
   {
     id: 3,

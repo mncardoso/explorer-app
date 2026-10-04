@@ -29,9 +29,10 @@ export default function Home() {
             <Image
               src={ImageLoader('jane.png')}
               alt={'Jane Doe'}
-              layout="intrinsic"
               width={161}
               height={161}
+              style={{ width: '100%', height: 'auto' }}
+              priority
             />
           </div>
           <div className={styles.info}>

@@ -1,4 +1,4 @@
-// import Link from 'next/link';
+import Link from 'next/link';
 
 import styles from './BotBar.module.css';
 
@@ -6,7 +6,7 @@ const BotBar = () => {
   return (
     <div className={styles.bot_bar}>
       <div className={styles.icons}>
-        <a href={'../list_all'}>
+        <Link href="/list_all" aria-label="Explore">
           <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
             <g transform="translate(-9 -8.838)">
               <path
@@ -16,8 +16,8 @@ const BotBar = () => {
               ></path>
             </g>
           </svg>
-        </a>
-        <a href={'../list_fav'}>
+        </Link>
+        <Link href="/list_fav" aria-label="Favorites">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="25.075"
@@ -36,15 +36,15 @@ const BotBar = () => {
               ></path>
             </g>
           </svg>
-        </a>
-        <a href={'../passport'}>
+        </Link>
+        <Link href="/passport" aria-label="Passport">
           <svg xmlns="http://www.w3.org/2000/svg" width="22.75" height="26" viewBox="0 0 22.75 26">
             <path
               fill="#fff"
               d="M6.582,8.938H8.567a11.459,11.459,0,0,1,.722-3.576A4.867,4.867,0,0,0,6.582,8.938Zm0,1.625a4.868,4.868,0,0,0,2.707,3.576,11.444,11.444,0,0,1-.722-3.576H6.582Zm4.793,4a6.908,6.908,0,0,0,1.19-4h-2.38a6.913,6.913,0,0,0,1.19,4Zm-1.19-5.621h2.38a6.91,6.91,0,0,0-1.19-4A6.9,6.9,0,0,0,10.185,8.938Zm3.276,5.2a4.867,4.867,0,0,0,2.707-3.576H14.183A11.444,11.444,0,0,1,13.461,14.138ZM21.125,0H3.25A3.25,3.25,0,0,0,0,3.25v19.5A3.25,3.25,0,0,0,3.25,26H21.125a1.625,1.625,0,0,0,1.625-1.625V1.625A1.625,1.625,0,0,0,21.125,0ZM17.063,21.125H5.688a.813.813,0,0,1,0-1.625H17.063a.813.813,0,0,1,0,1.625ZM11.375,16.25a6.5,6.5,0,1,1,6.5-6.5A6.5,6.5,0,0,1,11.375,16.25ZM13.461,5.362a11.444,11.444,0,0,1,.722,3.576h1.985a4.867,4.867,0,0,0-2.707-3.576Z"
             ></path>
           </svg>
-        </a>
+        </Link>
       </div>
       <div className={styles.bar}>
         <div className={styles.bar_white}></div>

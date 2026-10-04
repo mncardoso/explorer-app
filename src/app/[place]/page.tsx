@@ -11,10 +11,11 @@ import { destinations, near_by } from '@/data/data';
 
 import styles from './page.module.css';
 
-export default function Home({ params }: { params: { place: string } }) {
+export default async function PlacePage({ params }: { params: Promise<{ place: string }> }) {
+  const { place } = await params;
   const data = destinations
     .map(d =>
-      d.destination === params.place
+      d.destination === place
         ? {
             destination: d.destination,
             image: d.image,
@@ -41,7 +42,14 @@ export default function Home({ params }: { params: { place: string } }) {
             <p>{data[0].location}</p>
           </div>
           <div className={styles.image}>
-            <Image src={data[0].header} alt="moon" layout="raw" width={414} height={215} />
+            <Image
+              src={data[0].header}
+              alt={data[0].location}
+              width={414}
+              height={215}
+              style={{ width: '100%', height: 'auto' }}
+              priority
+            />
           </div>
         </div>
         <div className={styles.content}>
@@ -51,7 +59,7 @@ export default function Home({ params }: { params: { place: string } }) {
             ))}
           </div>
           <div className={styles.buttons}>
-            <ButtonPlace input={'Get me there'} destination={'../map'} active={true} />
+            <ButtonPlace input={'Get me there'} destination="/map" active={true} />
             <ButtonPlace input={'Get Stamp'} destination={''} active={false} />
           </div>
           <div className={styles.nearby}>

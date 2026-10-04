@@ -2,8 +2,16 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['s3.eu-north-1.amazonaws.com', 'pbs.twimg.com'],
-    path: '/_next/image',
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 's3.eu-north-1.amazonaws.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'pbs.twimg.com',
+      },
+    ],
   },
 };
 
